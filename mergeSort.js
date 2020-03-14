@@ -1,0 +1,37 @@
+// https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/
+// sorts two arrays of numbers in ascending order
+function mergeSort(arr1, arr2) {
+  const results = [];
+  let i = 0;
+  let j = 0;
+
+  // increment both counters until reaching
+  // the end of either array
+  while (i < arr1.length && j < arr2.length) {
+    // push the lesser value of the two arrays
+    // then increment its counter
+    if (arr1[i] < arr2[j]) {
+      results.push(arr1[i]);
+      i++;
+    } else {
+      results.push(arr2[j]);
+      j++;
+    }
+  }
+
+  // fill in the rest of the values after
+  // either of the counters reaches the end of the array
+  while (i < arr1.length) {
+    results.push(arr1[i]);
+    i++;
+  }
+  while (j < arr2.length) {
+    results.push(arr2[j]);
+    j++;
+  }
+
+  return results;
+}
+
+const result = mergeSort([1, 10, 50], [2, 14, 99, 100]); // [1, 2, 10, 14, 50, 99, 100]
+console.log(result);
