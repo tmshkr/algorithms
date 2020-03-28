@@ -8,12 +8,15 @@ class Node {
 
 class BinarySearchTree {
   constructor() {
+    // root === firstNode
     this.root = null;
   }
 
   insert(value) {
     var newNode = new Node(value);
     if (this.root === null) {
+      // if there is no root node,
+      // set the newNode to the root node
       this.root = newNode;
       return this;
     } else {
@@ -36,6 +39,23 @@ class BinarySearchTree {
         } else return undefined;
       }
     }
+  }
+
+  find(value) {
+    if (this.root === null) return false;
+    var current = this.root;
+    var found = false;
+    while (current && !found) {
+      if (value < current.value) {
+        current = current.left;
+      } else if (value > current.value) {
+        current = current.right;
+      } else {
+        found = true;
+      }
+    }
+    if (!found) return undefined;
+    return current;
   }
 }
 
