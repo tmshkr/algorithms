@@ -166,3 +166,4 @@ list = new DoublyLinkedList();
 for (let num = 65; num < 69; num++) {
   list.push(String.fromCharCode(num));
 }
+console.log(list);
