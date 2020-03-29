@@ -18,8 +18,8 @@ function memoize(fn) {
   };
 }
 
-const memoizedTime10 = memoize(times10);
+const memoizedTimes10 = memoize(times10);
 
-console.log("memoizedTime10(5):", memoizedTime10(5));
-console.log("memoizedTime10(6):", memoizedTime10(6));
-console.log("memoizedTime10(5):", memoizedTime10(5));
+console.log("memoizedTimes10(5):", memoizedTimes10(5));
+console.log("memoizedTimes10(6):", memoizedTimes10(6));
+console.log("memoizedTimes10(5):", memoizedTimes10(5));
