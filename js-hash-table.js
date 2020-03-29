@@ -1,5 +1,6 @@
 /*
 https://frontendmasters.com/courses/data-structures-interviews/hash-table-usage-constructor-insert/
+https://repl.it/@tmshkr/js-hash-table
 */
 /** Class representing a Hash Table */
 
