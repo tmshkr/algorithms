@@ -8,7 +8,7 @@ function memoize(fn) {
   return (...args) => {
     const key = args.toString();
     if (key in cache) {
-      console.log("found in cache");
+      console.log(`${key} found in cache`);
       return cache[key];
     }
 
