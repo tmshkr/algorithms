@@ -1,5 +1,6 @@
 /*
 https://frontendmasters.com/courses/data-structures-interviews/queue-exercise/
+https://repl.it/@tmshkr/queue-prompt
 */
 /** Class representing a Queue.
  * @constructor
