@@ -6,7 +6,7 @@ function memoize(fn) {
   const cache = {};
 
   return (...args) => {
-    const key = args.toString();
+    const key = JSON.stringify(args);
     if (key in cache) {
       console.log(`${key} found in cache`);
       return cache[key];
